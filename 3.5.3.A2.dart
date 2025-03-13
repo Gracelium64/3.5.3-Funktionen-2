@@ -1,6 +1,6 @@
 import 'functions.dart';
 
-void main(){
+void main() {
 
   clearConsole();
 
@@ -11,7 +11,8 @@ void main(){
   print(textLength('game'));
 
   lineBreak();
-
+  bunny();
+  
 }
 
 int textLength(String text) {

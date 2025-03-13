@@ -9,7 +9,8 @@ void main() {
   print('"Aaand another test contains ${aeiou('Aaand another test')} vowels');
 
   lineBreak();
-
+  bunny();
+  
 }
 
 int aeiou(String text) {

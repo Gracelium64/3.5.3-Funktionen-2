@@ -27,8 +27,6 @@ void main() {
 
 }
 
-// if (numbers[i] % 2 == 0)
-
 bool evenNumber(int a) {
   bool even = true;
   if (a % 2 == 0) {

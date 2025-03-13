@@ -3,6 +3,7 @@ import 'functions.dart';
 void main() {
 
   clearConsole();
+  bunny();
 
   print(textLength('You'));
   print(textLength('just'));
@@ -11,7 +12,6 @@ void main() {
   print(textLength('game'));
 
   lineBreak();
-  bunny();
   
 }
 

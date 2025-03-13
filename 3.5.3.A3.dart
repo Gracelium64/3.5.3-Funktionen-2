@@ -3,13 +3,13 @@ import 'functions.dart';
 void main() {
 
   clearConsole();
+  bunny();
 
   print('"Testing" contains ${aeiou('testing')} vowels');
   print('"Another test" contains ${aeiou('another test')} vowels');
-  print('"Aaand another test contains ${aeiou('Aaand another test')} vowels');
+  print('"Aaand another test" contains ${aeiou('Aaand another test')} vowels');
 
   lineBreak();
-  bunny();
   
 }
 
@@ -25,6 +25,16 @@ int aeiou(String text) {
     } else if (text[i].contains('o')) {
       result++;
     } else if (text[i].contains('u')) {
+      result++;
+    } else if (text[i].contains('A')) {
+      result++;
+    } else if (text[i].contains('E')) {
+      result++;
+    } else if (text[i].contains('I')) {
+      result++;
+    } else if (text[i].contains('O')) {
+      result++;
+    } else if (text[i].contains('U')) {
       result++;
     }
   }

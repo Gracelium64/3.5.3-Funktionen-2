@@ -8,13 +8,13 @@ void lineBreak() {
 }
 
 //Sum of 2 numbers
-double sum2(double a, double b) {
+double addTwo(double a, double b) {
   double result = a + b ;
   return result;
 }
 
 //Sum of 3 numbers
-double sum3(double a, double b, double c) {
+double addThree(double a, double b, double c) {
   double result = a + b + c;
   return result;
 }
@@ -33,7 +33,7 @@ int textLength(String text) {
   
   // // // // wordInput = 'Example';
   // // // // letterInput = 'x';
-  // // // // printMe(counter, wordInput, letterInput);
+  // // // // printMeCounter(counter, wordInput, letterInput);
 
 int letterCounter(String word, String letter) {
     int counter = 0;
@@ -46,7 +46,7 @@ int letterCounter(String word, String letter) {
     return counter;
   }
 
-  void printMe(int printer, String wInput, String lInput) {
+  void printMeCounter(int printer, String wInput, String lInput) {
   printer = letterCounter(wInput, lInput);
     print('The letter "$lInput" appears $printer times in the input "$wInput"');
     lineBreak();
@@ -55,14 +55,13 @@ int letterCounter(String word, String letter) {
 //Letter checker
   // // // // String wordInput = '';
   // // // // String letterInput = '';
-  // // // // bool? appearsIn = null;
+  // // // // bool appearsIn = true;
 
   // // // // wordInput = 'Word';
   // // // // letterInput = 'o';
-  // // // // appearsIn = letterChecker(wordInput, letterInput);
-  // // // // printMe(appearsIn!, wordInput, letterInput);
+  // // // // printMe(appearsIn, wordInput, letterInput);
 
-bool? letterChecker(String word, String letter) {
+bool letterChecker(String word, String letter) {
   if (word.contains(letter)) {
     return true;
   } else {
@@ -70,7 +69,8 @@ bool? letterChecker(String word, String letter) {
   }
 }
 
-void printMe(bool printer, String wInput, String lInput) {
+void printMeChecker(bool printer, String wInput, String lInput) {
+  printer = letterChecker(wInput, lInput);
   if (printer == true) {
     print('The letter "$lInput" appears in the word "$wInput"');
     lineBreak();

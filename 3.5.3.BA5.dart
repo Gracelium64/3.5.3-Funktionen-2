@@ -11,21 +11,15 @@ void main() {
   
   wordInput = 'Example';
   letterInput = 'x';
-  counter = letterCounter(wordInput, letterInput);
-    print('The letter "$letterInput" appears $counter times in the input "$wordInput"');
-    lineBreak();
+  printMe(counter, wordInput, letterInput);
 
   wordInput = 'Example2';
   letterInput = 'q';
-  counter = letterCounter(wordInput, letterInput);
-    print('The letter "$letterInput" appears $counter times in the input "$wordInput"');
-    lineBreak();
+  printMe(counter, wordInput, letterInput);
  
   wordInput = 'Example 3 Example 3';
   letterInput = 'E';
-  counter = letterCounter(wordInput, letterInput);
-    print('The letter "$letterInput" appears $counter times in the input "$wordInput"');
-    lineBreak();
+  printMe(counter, wordInput, letterInput);
 
   lineBreak();
 
@@ -40,4 +34,10 @@ int letterCounter(String word, String letter) {
       }
     }
     return counter;
+  }
+
+  void printMe(int printer, String wInput, String lInput) {
+  printer = letterCounter(wInput, lInput);
+    print('The letter "$lInput" appears $printer times in the input "$wInput"');
+    lineBreak();
   }

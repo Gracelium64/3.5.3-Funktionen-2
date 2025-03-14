@@ -26,7 +26,15 @@ int textLength(String text) {
 }
 
 
-//Letter in word counter
+//Letter counter
+  // // // // String wordInput = '';
+  // // // // String letterInput = '';
+  // // // // int counter = 0;
+  
+  // // // // wordInput = 'Example';
+  // // // // letterInput = 'x';
+  // // // // printMe(counter, wordInput, letterInput);
+
 int letterCounter(String word, String letter) {
     int counter = 0;
     for (int i = 0; i < word.length; i++) {
@@ -38,12 +46,37 @@ int letterCounter(String word, String letter) {
     return counter;
   }
 
+  void printMe(int printer, String wInput, String lInput) {
+  printer = letterCounter(wInput, lInput);
+    print('The letter "$lInput" appears $printer times in the input "$wInput"');
+    lineBreak();
+  }
+
 //Letter checker
+  // // // // String wordInput = '';
+  // // // // String letterInput = '';
+  // // // // bool? appearsIn = null;
+
+  // // // // wordInput = 'Word';
+  // // // // letterInput = 'o';
+  // // // // appearsIn = letterChecker(wordInput, letterInput);
+  // // // // printMe(appearsIn!, wordInput, letterInput);
+
 bool? letterChecker(String word, String letter) {
   if (word.contains(letter)) {
     return true;
   } else {
     return false;
+  }
+}
+
+void printMe(bool printer, String wInput, String lInput) {
+  if (printer == true) {
+    print('The letter "$lInput" appears in the word "$wInput"');
+    lineBreak();
+  } else {
+    print('The letter "$lInput" does not appear in the word "$wInput"');
+    lineBreak();
   }
 }
 

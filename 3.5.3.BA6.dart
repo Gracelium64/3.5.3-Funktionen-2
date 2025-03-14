@@ -7,37 +7,22 @@ void main() {
 
   String wordInput = '';
   String letterInput = '';
-  String appearsIn = '';
+  bool? appearsIn = null;
 
   wordInput = 'Word';
   letterInput = 'o';
-  if (letterChecker(wordInput, letterInput) == true) {
-    appearsIn = 'appears';
-  } else {
-    appearsIn = 'does not appear';
-  }
-  print('The letter "$letterInput" $appearsIn in the word "$wordInput"');
-  lineBreak();
-
+  appearsIn = letterChecker(wordInput, letterInput);
+  printMe(appearsIn!, wordInput, letterInput);
+  
   wordInput = 'Word';
   letterInput = 'q';
-  if (letterChecker(wordInput, letterInput) == true) {
-    appearsIn = 'appears';
-  } else {
-    appearsIn = 'does not appear';
-  }
-  print('The letter "$letterInput" $appearsIn in the word "$wordInput"');
-  lineBreak();
+  appearsIn = letterChecker(wordInput, letterInput);
+  printMe(appearsIn!, wordInput, letterInput);
   
-  wordInput = 'Another word';
-  letterInput = 'd';
-  if (letterChecker(wordInput, letterInput) == true) {
-    appearsIn = 'appears';
-  } else {
-    appearsIn = 'does not appear';
-  }
-  print('The letter "$letterInput" $appearsIn in the word "$wordInput"');
-  lineBreak();
+  wordInput = 'asdfghjkl;;;;';
+  letterInput = 'n';
+  appearsIn = letterChecker(wordInput, letterInput);
+  printMe(appearsIn!, wordInput, letterInput);
 
   lineBreak();
 
@@ -49,5 +34,15 @@ bool? letterChecker(String word, String letter) {
     return true;
   } else {
     return false;
+  }
+}
+
+void printMe(bool printer, String wInput, String lInput) {
+  if (printer == true) {
+    print('The letter "$lInput" appears in the word "$wInput"');
+    lineBreak();
+  } else {
+    print('The letter "$lInput" does not appear in the word "$wInput"');
+    lineBreak();
   }
 }

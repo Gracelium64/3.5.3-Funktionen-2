@@ -109,6 +109,19 @@ int vowelChecker(String text) {
     return result;
   }
 
+//Number polarity checker
+
+// ignore: body_might_complete_normally_nullable
+bool? numberPolarity(double x) {
+    if (x > 0) {
+      print('The number "$x" is positive');
+    } else if (x < 0) {
+      print('The number "$x" is negative');
+    } else {
+      print('The number is 0');
+    }
+}
+
   //Bigger number comparison
   double biggerNumber(double a, double b) {
   double c = 0;

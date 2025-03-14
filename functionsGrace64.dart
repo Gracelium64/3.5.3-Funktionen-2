@@ -38,6 +38,15 @@ int letterCounter(String word, String letter) {
     return counter;
   }
 
+//Letter checker
+bool? letterChecker(String word, String letter) {
+  if (word.contains(letter)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 //Vowel Checker
 int vowelChecker(String text) {
   int result = 0;

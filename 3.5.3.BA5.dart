@@ -5,26 +5,26 @@ void main() {
   clearConsole();
   bunny();
 
-  String word = '';
-  String letter = '';
+  String wordInput = '';
+  String letterInput = '';
   int counter = 0;
   
-  word = 'Example';
-  letter = 'x';
-  counter = letterCounter(word, letter);
-    print('The letter "$letter" appears $counter times in the input "$word"');
+  wordInput = 'Example';
+  letterInput = 'x';
+  counter = letterCounter(wordInput, letterInput);
+    print('The letter "$letterInput" appears $counter times in the input "$wordInput"');
     lineBreak();
 
-  word = 'Example2';
-  letter = 'q';
-  counter = letterCounter(word, letter);
-    print('The letter "$letter" appears $counter times in the input "$word"');
+  wordInput = 'Example2';
+  letterInput = 'q';
+  counter = letterCounter(wordInput, letterInput);
+    print('The letter "$letterInput" appears $counter times in the input "$wordInput"');
     lineBreak();
  
-  word = 'Example 3 Example 3';
-  letter = 'E';
-  counter = letterCounter(word, letter);
-    print('The letter "$letter" appears $counter times in the input "$word"');
+  wordInput = 'Example 3 Example 3';
+  letterInput = 'E';
+  counter = letterCounter(wordInput, letterInput);
+    print('The letter "$letterInput" appears $counter times in the input "$wordInput"');
     lineBreak();
 
   lineBreak();

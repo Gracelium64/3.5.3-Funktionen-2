@@ -7,6 +7,12 @@ void lineBreak() {
   print('');
 }
 
+//Sum of 2 numbers
+double sum2(double a, double b) {
+  double result = a + b ;
+  return result;
+}
+
 //Sum of 3 numbers
 double sum3(double a, double b, double c) {
   double result = a + b + c;
@@ -18,6 +24,19 @@ int textLength(String text) {
   int result = text.length;
   return result;
 }
+
+
+//Letter in word counter
+int letterCounter(String word, String letter) {
+    int counter = 0;
+    for (int i = 0; i < word.length; i++) {
+      String currentLetter = word[i];
+      if (currentLetter == letter) {
+      counter++;
+      }
+    }
+    return counter;
+  }
 
 //Vowel Checker
 int vowelChecker(String text) {
@@ -90,7 +109,7 @@ double averageList(List<double> a) {
 }
 
 //Number inverter
-int numberInverter(int a) {
+double numberInverter(int a) {
   return a * -1;
 }
 

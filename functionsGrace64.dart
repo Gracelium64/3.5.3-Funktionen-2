@@ -7,6 +7,93 @@ void lineBreak() {
   print('');
 }
 
+//Sum of 3 numbers
+double sum3(double a, double b, double c) {
+  double result = a + b + c;
+  return result;
+}
+
+//Text Length
+int textLength(String text) {
+  int result = text.length;
+  return result;
+}
+
+//Vowel Checker
+int vowelChecker(String text) {
+  int result = 0;
+  for (int i = 0; i < text.length; i++) {
+    if (text[i].contains('a')) {
+      result++;
+    } else if (text[i].contains('e')) {
+      result++;
+    } else if (text[i].contains('i')) {
+      result++;
+    } else if (text[i].contains('o')) {
+      result++;
+    } else if (text[i].contains('u')) {
+      result++;
+    } else if (text[i].contains('A')) {
+      result++;
+    } else if (text[i].contains('E')) {
+      result++;
+    } else if (text[i].contains('I')) {
+      result++;
+    } else if (text[i].contains('O')) {
+      result++;
+    } else if (text[i].contains('U')) {
+      result++;
+    }
+  }
+    return result;
+  }
+
+  //Bigger number comparison
+  double biggerNumber(double a, double b) {
+  double c = 0;
+  if (a > b) {
+    c = a;
+  } else {
+    c = b;
+  }
+  return c;
+}
+
+//Even number checker
+bool evenNumber(int a) {
+  bool even = true;
+  if (a % 2 == 0) {
+    even = true;
+  } else {
+    even = false;
+  }
+  return even;
+}
+
+//Sum of List
+int sumList(List<int> a) {
+  int addedUp = 0;
+  for (int i = 0; i < a.length; i++) {
+    addedUp += a[i];
+  }
+  return addedUp;
+}
+
+//Average of List
+double averageList(List<double> a) {
+  double result = 0;
+    for (int i = 0; i < a.length; i++) {
+    result += a[i];
+  }
+  result = (result / a.length);
+  return result;
+}
+
+//Number inverter
+int numberInverter(int a) {
+  return a * -1;
+}
+
 void bunny() {
   print(r'''
                                                                         ........:                     
